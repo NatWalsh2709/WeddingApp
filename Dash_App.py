@@ -18,7 +18,7 @@ from settings import config
 # App Instance
 app = dash.Dash(name=config.app_name, assets_folder="static", external_stylesheets=[dbc.themes.LUX, config.fontawesome])
 app.title = config.app_name
-
+server = app.server
 
 
 ########################## Navbar ##########################
